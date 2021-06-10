@@ -6,5 +6,5 @@ Automating emails by the help of Python, smtplib, Linux OS, HTML, CSS, with atta
 
 
 <div align="center">
-    <img src="/img/result.png" width="400px"</img> 
+    <img src="/img/result.png" </img> 
 </div>
