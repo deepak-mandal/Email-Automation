@@ -89,7 +89,8 @@ def PyMail(msg_to):
 
 
 if __name__ == "__main__":
-    msgTO_list = ['dkm.iitg@gmail.com', 'dkmiit.g@gmail.com']
+    msgTO_list = ['dkm.iitg@gmail.com', 
+                  'dkmiit.g@gmail.com']
     for msg_to in msgTO_list:
         PyMail(msg_to)
         print("message sent to : {} Successfully!!".format(msg_to))
