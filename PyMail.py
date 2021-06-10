@@ -23,16 +23,16 @@ def PyMail(msg_to):
             <p>
                 Dear sir/ma'am,<br/><br/>
                 
-                Please find enclosed my Resume for the application process.<br/><br/>
+                Please find enclosed my Resume......................<br/><br/>
                 
-                I'm Deepak. I have been completed the Academic Curriculum of B.Tech. in CST from IIT Guwahati, India.
-                My expected year of graduation is 2021, and I'm currently looking for an internship or full-time
-                opportunity that I may be eligible.<br/>
+                I'm Deepak. I have been completed the Academic Curriculum of B.Tech...............................
+                ....................
+                ..........<br/>
                 
                 
                 <p>
                 
-                Apart from having a Cumulative Performance Index (CPI) of 6.99, I'm skilled in Python programming language,
+                ................................................ I'm skilled in Python programming language,
                 C, DBMS - MySQL, SQLite, Analytical tools such as pandas NumPy, Matplotlib, scikit-learn, nltk,
                 BeautifulSoup/bs4, MS Excel, SQL, Data structures & algorithms, and web development technologies such as HTML, CSS, JavaScript,
                 Bootstrap, PHP, Django. In addition, I have certification in "Certified Python Marketing Analytics (CPMA)".
@@ -47,12 +47,12 @@ def PyMail(msg_to):
                                  
                  
                                  
-                As our Academic Curriculum has been completed, so I am available for full-time, and further my willingness
-                to apply my knowledge, the skill set that I have learned so far, into solving real-world problems. I am always 
+                .......................................................................
+                .............................................................. I am always 
                 ready to learn any new skills that are required in a professional career.<br><br/>
                     
                 
-                Please have a look at my CV, & Kindly let me know if there is any relevant opening, that you may consider 
+                .........................................................................
                 me for? A google drive link of CV: https://drive.google.com/drive/folders/1ldr-ni5ocNDELhasuICZrsLyUERmhjQP?usp=sharing
                 
                 
@@ -65,7 +65,7 @@ def PyMail(msg_to):
                 Deepak Kumar Mandal<br>
                 B.Tech, IIT Guwahati, INDIA<br>
                 Email: dkmiitg@gmail.com<br>
-                Contact: +91-7764933459<br>
+                Contact: .......................<br>
                 
             </p>
         </body>
@@ -86,32 +86,13 @@ def PyMail(msg_to):
         smtp.send_message(msg)
         
 
-#srashti@blitzjobs.in ---- "Process Engineer Job Application"
+
 
 if __name__ == "__main__":
-    msgTO_list = ['hr@excellentwebworld.com', 
-                  'hr@techybirds.com',
-                  'alka.glocify@gmail.com',
-                  'hrsonal28@gmail.com',
-                  'hr@auspicioussoft.com',
-                  'khushbu@webcodegenie.com',
-                  'srashti@blitzjobs.in',
-                  'official@snakescript.com',
-                  'hr@ninjatechnolabs.com',
-                  'prerna.sharma@infosectrain.com',
-                  'hr@macropolymers.com',
-                  'vaghasiyamayur4net@gmail.com',
-                  'divya@durajobs.in',
-                  'ravi@promotuphr.com',
-                  'harshita@flexability.in',
-                  'prasanth.kambham@quesscorp.com',
-                  'contact@infyom.in',
-                  'trina.mitra@planetspark.in',
-                  'nidhi@eligere.ai',
-                  'piyush.piyush.civ16@iitbhu.ac.in',
-                  'anagha@workeagle.in',
-                  'anagha@workeagle.in',
-                  'milind.gurav@colortokens.com']
+    msgTO_list = ['......@email.com', 
+                  '........@pymail.com',
+                  '....@xyz.com',
+                  '..@gmail.com']
     try:
         for msg_to in msgTO_list:
             PyMail(msg_to)
