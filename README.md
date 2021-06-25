@@ -1,10 +1,13 @@
 # Email-Automation-with-Python
-Automating emails by the help of Python, smtplib, Linux OS, HTML, CSS, with attachments using Encrypted connections.
+<b>Automating emails by the help of Python, smtplib, Linux & Window OS, HTML, CSS, with attachments using Encrypted connections.</b>
 
+<h3>Features</h3>:- Multiple emails can in one go or on single click, The delivered email is of personalised type i.e. "to" for each single email_Id but not "bcc" or "cc" e-mail type
 
-<h1>Sent multiple emails in one go or on single click.. Point to be noted is received email is in personalised type i.e. "to" for each single email_Id but not "bcc" or "cc" e-mail</h1>
 
 
 <div align="center">
     <img src="/img/result.png" </img> 
 </div>
+
+
+
