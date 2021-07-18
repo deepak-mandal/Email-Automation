@@ -24,48 +24,22 @@ def PyMail(msg_to):
             <p>
                 Dear sir/ma'am,<br/><br/>
                 
-                Please find enclosed my Resume for the application process.<br/><br/>
                 
-                I'm Deepak. I have Graduated in July 2021. I have been done the Academic Curriculum of B.Tech. in CST from IIT Guwahati, India.
-                I'm currently looking for an internship or full-time opportunity that I may be eligible.<br/>
-                
-                
-                <br/>
-                
-                I'm skilled in Python programming language, C, Data structures & algorithms, Analytical tools - SQL, MS Excel, pandas, NumPy,
-                Matplotlib, scikit-learn, nltk, BeautifulSoup/bs4, and web development technologies - HTML, CSS, JavaScript,
-                Bootstrap, MySQL, SQLite, PHP, Django. <br/><br/>
-
-                
-                I have been done Projects on:-
                 <ul>
-                    <li> Developed PHP-based full-stack web app - CRSI Conference Website.</li>
-                    <li> Developed Python-based desktop application - Fantasy Cricket Game.</li>
-                    <li> Built a Model using Machine Learning technique for the House Price Prediction.</li>
+                    <li> </li>
                 </ul>
                 
                 
                 
-                In addition, I have certification in:-
-                <ul>
-                    <li>Certified Python Marketing Analytics (CPMA)</li>
-                    <li>HackerRank Certification in Python, Problem Solving & SQL</li>
-                </ul>
                 
                 
                                  
                  <br/>
                                  
-                Now, I am available for full-time, and further my willingness to apply my knowledge, the skill set that I have 
-                learned so far, into solving real-world problems. I am always ready to learn any new skills that are required in a professional career.<br><br/>
-                    
-                
-                Please have a look at my CV & Kindly let me know if there is any relevant opening, that you may consider 
-                me for? A google drive link of CV: https://drive.google.com/drive/folders/1ldr-ni5ocNDELhasuICZrsLyUERmhjQP?usp=sharing
                 
                 
-                <br/><br/>I will be happy to provide any more information that you may need. I look forward to
-                hearing from you. Thank you!
+                
+                 Thank you!
                 <br/><br/><br/>
                 
                 
