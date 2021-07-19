@@ -11,7 +11,7 @@ def PyMail(msg_to):
     #contacts=['dkm.iitg@gmail.com', 'xyz@iitg.ac.in']
 
     msg = EmailMessage()
-    msg['Subject'] = 'Application for internship or full-time Opportunity - Deepak, IIT Guwahati'
+    msg['Subject'] = 'App IIT Guwahati'
     msg['From'] = EMAIL_ADDRESS
     #msg['To'] = 'dkm.iitg@gmail.com'      #contacts
     msg['To'] = msg_to    #'dkm.iitg@gmail.com'
