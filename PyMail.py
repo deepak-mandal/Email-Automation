@@ -47,7 +47,7 @@ def PyMail(msg_to):
                 Deepak Kumar Mandal<br>
                 B.Tech, Indian Institute of Technology, Guwahati<br>
                 Email: dkmiitg@gmail.com<br>
-                Contact: +91-7764933459<br>
+                Contact: +91-xxxxxxxxxx<br>
                 https://github.com/deepak-mandal/<br/>
                 
             </p>
