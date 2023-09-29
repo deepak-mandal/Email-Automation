@@ -1,0 +1,41 @@
+package io.github.deepakmandal;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.context.event.EventListener;
+
+import jakarta.mail.MessagingException;
+
+@SpringBootApplication
+public class EmailAppApplication {
+
+	@Autowired
+	private EmailService emailService;
+
+	public static void main(String[] args) {
+		SpringApplication.run(EmailAppApplication.class, args);
+	}
+
+	@EventListener(ApplicationReadyEvent.class)
+	public void sendMail() throws MessagingException {
+		String[] emailArr = { "dkm.iitg@gmail.com", 
+				"deepa170122014@alumni.iitg.ac.in", 
+				"deepakkumar.mandal@cgi.com", 
+				};
+
+		int noOfEmailSent =0;
+		for (String toEmail : emailArr) {
+			try {
+				emailService.sendMessageWithAttachment(toEmail);
+				noOfEmailSent++;
+			}catch(Exception e) {
+				System.out.println(e);
+			}finally {
+				System.out.println("total no. of message sent = "+noOfEmailSent);
+			}
+		}
+	}
+
+}

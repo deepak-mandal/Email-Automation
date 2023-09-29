@@ -1,0 +1,31 @@
+package io.github.deepakmandal;
+
+//import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+//import org.springframework.boot.context.event.ApplicationReadyEvent;
+//import org.springframework.context.event.EventListener;
+
+@SpringBootApplication
+public class EmailAppApplication {
+	
+//	@Autowired
+//	private EmailService emailService;
+
+	public static void main(String[] args) {
+		SpringApplication.run(EmailAppApplication.class, args);
+		
+//		String to = "dkm.iitg@gmail.com";
+//		EmailService emailServiceImpl = new EmailService();
+//		emailServiceImpl.sendSimpleMessage(to);
+		sendMail();
+	}
+	
+	
+//	@EventListener(ApplicationReadyEvent.class)
+	public static void sendMail() {
+		EmailService emailService = new EmailService();
+		emailService.sendSimpleMessage("dkm.iitg@gmail.com");
+	}
+
+}

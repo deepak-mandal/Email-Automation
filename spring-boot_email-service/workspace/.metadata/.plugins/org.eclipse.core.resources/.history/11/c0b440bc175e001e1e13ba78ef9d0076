@@ -1,0 +1,89 @@
+package io.github.deepakmandal;
+
+//import java.util.Properties;
+
+import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.context.annotation.Bean;
+import org.springframework.core.io.FileSystemResource;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
+//import org.springframework.mail.javamail.JavaMailSenderImpl;
+import org.springframework.mail.javamail.MimeMessageHelper;
+//import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+
+import jakarta.mail.MessagingException;
+import jakarta.mail.internet.MimeMessage;
+import java.io.File;
+
+@Service
+public class EmailService {
+	
+    @Autowired
+    private JavaMailSender emailSender;
+
+    public void sendSimpleMessage(String to) {
+//        ...
+    	String subject = "test subject";
+    	String text = "test text";
+        SimpleMailMessage message = new SimpleMailMessage(); 
+        message.setFrom("dkmiitg@gmail.com");
+        message.setTo(to); 
+        message.setSubject(subject); 
+        message.setText(text);
+        emailSender.send(message);
+        System.out.println("Email sent successfully!!");
+//        ...
+    }
+    
+//    @Override
+    public void sendMessageWithAttachment(String to) throws MessagingException {
+        // ...
+    	String subject = "test subject";
+    	String text = "<!DOCTYPE html>\r\n"
+    			+ "    <html>\r\n"
+    			+ "        <body style = \"font-family: \"Times New Roman\"; font-size:14px;\">\r\n"
+    			+ "            <p>\r\n"
+    			+ "                Dear sir/ma'am,\r\n"
+    			+ "                <br/>\r\n"
+    			+ "                <br/>\r\n"
+    			+ "                Please find enclosed my Resume.\r\n"
+    			+ "                <br/>\r\n"
+    			+ "                <br/>\r\n"
+    			+ "                I'm Deepak, and currently working as a Software Engineer (Java full-stack Developer) at CGI. I am highly skilled in Angular(TypeScript), Spring Boot(Java), SQL(Oracle DBMS).<br/>\r\n"
+    			+ "                <ul>\r\n"
+    			+ "                <li>Experiences: 2+ years</li>\r\n"
+    			+ "                <li>Education: B.Tech., IIT Guwahati; 2017-2021</li>\r\n"
+    			+ "                </ul>\r\n"
+    			+ "                Please let me know, if there is any relevant opportunity. Thank you.\r\n"
+    			+ "                <br/>\r\n"
+    			+ "                <br/>\r\n"
+    			+ "\r\n"
+    			+ "\r\n"
+    			+ "                Thanks and regards,\r\n"
+    			+ "                <br>\r\n"
+    			+ "                <b>Deepak Kumar Mandal</b> | Software Engineer | B.Tech. - Indian Institute of Technology Guwahati\r\n"
+    			+ "                <br>\r\n"
+    			+ "                dkmiitg@gmail.com | +91-7764933459\r\n"
+    			+ "                \r\n"
+    			+ "            </p>\r\n"
+    			+ "        </body>\r\n"
+    			+ "    </html>";
+    	String pathToAttachment = "C:\\Users\\dkmii\\Desktop\\py\\Email-Automation-with-Python\\Deepak-Resume.pdf";
+        MimeMessage message = emailSender.createMimeMessage();
+         
+        MimeMessageHelper helper = new MimeMessageHelper(message, true);
+        
+        helper.setFrom("dkmiitg@gmail.com");
+        helper.setTo(to);
+        helper.setSubject(subject);
+        helper.setText(text);
+            
+        FileSystemResource file = new FileSystemResource(new File(pathToAttachment));
+        helper.addAttachment(file.getFilename(), file);
+
+        emailSender.send(message);
+        System.out.println("message sent successfully..!!");
+        // ...
+    }
+}
