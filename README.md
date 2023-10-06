@@ -10,5 +10,6 @@
     <img src="/img/result.png" </img> 
 </div>
 
+Ref. https://myaccount.google.com/u/0/apppasswords
 
 

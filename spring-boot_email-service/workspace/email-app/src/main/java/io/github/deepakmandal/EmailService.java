@@ -18,12 +18,12 @@ public class EmailService {
 	public void sendMessageWithAttachment(String to) throws MessagingException {
 		String subject = "Query regarding technical opportunity - Deepak, Software Engineer | IIT Guwahati";
 		String text = "Dear sir/ma'am,<br/><br/>" + "Please find enclosed my Resume for your reference.<br/><br/>"
-				+ "I'm Deepak, and currently working as a Software Engineer (Java full-stack Developer) at CGI. I have significant experties in Angular(TypeScript), Spring Boot(Java), SQL(Oracle DBMS)."
+				+ "I'm Deepak, and currently working as a Software Engineer (Java full-stack Developer) at CGI. I have significant experties in Angular, Spring, Java, SQL, TypeScript/JavaScript, HTML, CSS."
 				+ "<ul><li>Experiences: 2+ years</li>" + "<li>Education: B.Tech., IIT Guwahati; 2017-2021</li></ul>"
 				+ "Please let me know, if there is any relevant opportunity. Thank you.<br/><br/>"
 				+ "Thanks and regards,<br/>"
 				+ "<b>Deepak Kumar Mandal</b> | Software Engineer | B.Tech. - Indian Institute of Technology Guwahati<br/>"
-				+ "dkmiitg@gmail.com | +91-7764933459";
+				+ "dkmiitg@gmail.com | +91-XXXXXXXXXX";
 		String pathToAttachment = "C:\\Users\\dkmii\\Desktop\\py\\Email-Automation-with-Python\\Deepak-Resume.pdf";
 		MimeMessage message = emailSender.createMimeMessage();
 
